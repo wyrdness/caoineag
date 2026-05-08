@@ -1,8 +1,8 @@
 {
   "meta": {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "schema_version": "1.0.0",
-    "last_updated": "2026-02-13",
+    "last_updated": "2026-05-07",
     "repository": "https://github.com/wyrdness/caoineag",
     "maintainers": [
       {
@@ -16,72 +16,124 @@
       "content": "CC-BY-4.0"
     }
   },
+
   "phenomenon": {
     "id": "caoineag",
-    "name": "Caoineag - The Scottish Weeping Spirit",
-    "aliases": [],
+    "name": "Caoineag",
+    "aliases": [
+      { "name": "Caoineag", "language": "Scottish Gaelic", "region": "Scottish Highlands", "meaning": "'the weeper'" },
+      { "name": "Caointeach", "language": "Scottish Gaelic", "region": "Islay", "meaning": "regional variant; appears outside the homes of the soon-to-die wearing a green shawl" }
+    ],
     "category": "ENTITY_SPIRIT",
-    "subcategory": "Unknown",
+    "subcategory": "Death portent / family spirit",
     "tags": [
-      "folklore",
-      "mythology"
+      "scottish",
+      "gaelic",
+      "highland",
+      "banshee-type",
+      "death-omen",
+      "female-spirit"
     ],
     "status": "documented",
     "description": {
-      "summary": "This phenomenon has been documented extensively across multiple time periods and continues to generate interest from researchers, folklorists, and investigators.",
-      "full": "This phenomenon has been documented extensively across multiple time periods and continues to generate interest from researchers, folklorists, and investigators. The evidence includes eyewitness accounts, cultural traditions, and in some cases physical documentation."
+      "summary": "A female death-portent spirit of the Scottish Highlands, associated particularly with certain clans, who weeps at waterfalls, streams, and lonely places before a death — most famously before the Massacre of Glencoe.",
+      "full": "The Caoineag (Scottish Gaelic for 'the weeper') is a female spirit of the Scottish Highlands whose lamentation is heard before deaths, especially violent or mass deaths. She is normally invisible and is heard wailing at waterfalls, in glens, by streams, and on mountainsides. Unlike the related bean nighe (the 'washer at the ford'), the Caoineag cannot be approached, questioned, or compelled to grant wishes. She is closely associated with specific clans, including Clan MacDonald of Glencoe, whose Caoineag was said to wail repeatedly the night before the 1692 Massacre of Glencoe. The closely related Caointeach is recorded in Islay tradition as a green-shawled figure heard outside the homes of those about to die. The figure is documented in Alexander Carmichael's Carmina Gadelica and in Edward Dwelly's Scottish Gaelic dictionary, and is part of a broader Gaelic family of female death-portent beings that includes the Irish bean sídhe (banshee)."
     },
     "etymology": {
-      "origin": "Unknown",
-      "meaning": "To be documented",
-      "first_use": "Unknown"
+      "origin": "Scottish Gaelic caoin- ('to weep, lament') with the feminine agent suffix -eag.",
+      "meaning": "'The weeper' / 'one who keens'.",
+      "first_use": "Recorded in Scottish Gaelic oral tradition; published English-language records in the 19th and early 20th centuries (Carmichael, Campbell, Dwelly)."
     }
   },
+
   "classification": {
     "taxonomy": {
       "category": "ENTITY_SPIRIT",
-      "type": "Unknown",
-      "subtype": "Unknown",
-      "variant": "Unknown"
+      "type": "Death portent",
+      "subtype": "Female keening spirit",
+      "variant": "Highland Scottish"
     },
-    "related_phenomena": []
+    "related_phenomena": [
+      { "id": "banshee", "name": "Bean sídhe (Banshee)", "relationship": "counterpart", "description": "Irish female death-portent spirit; the closest cognate to the Caoineag" },
+      { "id": "bean-nighe", "name": "Bean nighe", "relationship": "related", "description": "Scottish Gaelic 'washer at the ford' — a related, but distinct, death-portent figure who can be approached" },
+      { "id": "caointeach", "name": "Caointeach", "relationship": "regional_variant", "description": "Islay variant of the Caoineag, appearing in a green shawl" }
+    ]
   },
+
   "characteristics": {
     "physical": {
-      "features": [],
-      "morphology": "See README.md for detailed physical description"
+      "features": [
+        { "feature": "Invisibility", "description": "The Caoineag is generally heard but not seen", "frequency": "always" },
+        { "feature": "Keening / wailing voice", "description": "Distinctive sustained lamentation in the manner of a Gaelic funeral keen", "frequency": "always" },
+        { "feature": "Green shawl (Caointeach variant)", "description": "The Islay Caointeach is described in tradition as wearing a green shawl", "frequency": "occasional" }
+      ],
+      "morphology": "Typically incorporeal in tradition; the rare physical descriptions belong to the Caointeach variant."
     },
-    "abilities": [],
+    "abilities": [
+      { "ability": "Foreknowledge of death", "description": "Hears or 'knows' an approaching death and laments before it occurs, particularly mass or violent deaths affecting her associated clan", "frequency": "always", "evidence_level": "folklore" },
+      { "ability": "Audible at distance", "description": "Her keen carries through glens and across waterways", "frequency": "common", "evidence_level": "folklore" }
+    ],
     "behavior": {
-      "activity_period": "unknown",
-      "disposition": "unknown",
-      "habitat_preference": []
+      "activity_period": "nocturnal",
+      "disposition": "neutral",
+      "social_structure": "solitary",
+      "habitat_preference": ["waterfalls", "streams", "glens", "mountainsides", "lonely places near a clan's territory"],
+      "diet": "Not applicable",
+      "patterns": [
+        "Heard before deaths, especially violent or mass deaths",
+        "Associated with specific Highland clans rather than individual households",
+        "Cannot be approached or questioned, unlike the bean nighe"
+      ]
     }
   },
+
   "distribution": {
     "range": {
-      "description": "Unknown",
-      "continents": [],
-      "countries": [],
-      "regions": []
+      "description": "Scottish Highlands and the Hebrides, with strong attestation in Lochaber (Glencoe), Argyll, and Islay.",
+      "continents": ["Europe"],
+      "countries": ["United Kingdom"],
+      "regions": ["Scottish Highlands", "Hebrides", "Lochaber", "Argyll", "Islay"]
     },
-    "hotspots": [],
+    "hotspots": [
+      {
+        "name": "Glen Coe",
+        "location": {
+          "description": "Glen Coe, Lochaber",
+          "country": "United Kingdom",
+          "region": "Highland, Scotland",
+          "coordinates": { "latitude": 56.6743, "longitude": -5.0103 }
+        },
+        "peak_period": "Late 17th century (Glencoe Massacre tradition)",
+        "notes": "Site associated with the Caoineag of Clan MacDonald of Glencoe in oral tradition."
+      }
+    ],
     "temporal": {
       "first_recorded": {
-        "date": "Unknown",
+        "date": "1900",
         "circa": true,
-        "source": "Traditional folklore"
-      }
+        "source": "Alexander Carmichael, Carmina Gadelica (1900); the underlying oral tradition is older."
+      },
+      "peak_activity_periods": [
+        { "period": "Pre-1900 oral tradition", "description": "Caoineag traditions current among Gaelic-speaking Highland communities" },
+        { "period": "1900–1940", "description": "Period of folklore collection (Carmichael, Dwelly, Campbell of Islay)" }
+      ]
     }
   },
+
   "history": {
     "origins": {
-      "cultural_roots": "Unknown",
-      "earliest_accounts": "See README.md for historical details",
-      "folklore_connections": "Unknown"
+      "cultural_roots": "Scottish Gaelic Highland and Hebridean tradition; part of the broader Gaelic complex of female death-portent figures shared with Ireland.",
+      "earliest_accounts": "Oral tradition recorded in 19th- and early-20th-century folklore collections; the Glencoe association dates the tradition at least to the late 17th century.",
+      "folklore_connections": "Cognate with the Irish bean sídhe (banshee); related to but distinct from the Scottish bean nighe and the Manx caointeagh."
     },
-    "timeline": []
+    "timeline": [
+      { "date": "1692-02-13", "event": "Massacre of Glencoe; later Highland tradition holds that the Caoineag of Clan MacDonald wailed nightly before the killings", "significance": "The most-cited single legend involving the Caoineag", "source": "Highland oral tradition; recorded in Carmichael (1900) and later sources" },
+      { "date": "1900-01-01", "event": "Alexander Carmichael publishes Carmina Gadelica, including material on the Caoineag", "significance": "First major scholarly publication of the tradition in English", "source": "Carmichael, A., Carmina Gadelica vol. II" },
+      { "date": "1911-01-01", "event": "Edward Dwelly's Illustrated Gaelic-English Dictionary appears, defining caoineag among Scottish Gaelic supernatural terms", "significance": "Lexical attestation in the standard Gaelic dictionary", "source": "Dwelly, E. (1911)" }
+    ],
+    "modern_era": "The Caoineag survives as a name in Scottish folklore reference works, walking-tour interpretation in Glencoe, and contemporary Gaelic-revival literature. Few or no modern first-person 'sightings' are claimed; the figure today functions chiefly as a culturally embedded death-omen tradition rather than a live cryptozoological or paranormal claim."
   },
+
   "sightings": {
     "statistics": {
       "total_documented": 0,
@@ -92,35 +144,94 @@
     "notable": [],
     "database_path": "./sightings/"
   },
+
   "evidence": {
     "physical": [],
     "photographic": [],
     "video": [],
     "audio": [],
-    "trace": []
+    "trace": [],
+    "documentary": [
+      {
+        "id": "caoineag-evidence-carmina-gadelica",
+        "type": "folklore collection",
+        "name": "Carmina Gadelica entry",
+        "date": "1900",
+        "description": "Alexander Carmichael's late-19th-century field collection of Hebridean and Highland Gaelic tradition includes references to the Caoineag.",
+        "status": "verified",
+        "analysis": "Standard primary source for late-19th-century Highland folklore; Carmichael's editorial method has been critically reassessed by later scholars but remains foundational.",
+        "source": "Carmichael, A. (1900), Carmina Gadelica"
+      }
+    ]
   },
+
   "theories": {
-    "paranormal": [],
+    "paranormal": [
+      {
+        "name": "Tutelary clan-spirit",
+        "description": "The Caoineag is interpreted in tradition as a guardian or kin-spirit attached to a specific clan, whose lamentation gives warning of approaching disaster.",
+        "proponents": ["Alexander Carmichael", "Highland oral tradition"],
+        "evidence_cited": ["Glencoe legend", "Other clan-attached caoineag stories recorded in 19th-c. folklore"]
+      }
+    ],
     "scientific": [],
-    "skeptical": []
+    "skeptical": [
+      {
+        "name": "Folkloric explanation of natural sounds",
+        "description": "The Caoineag's keen is sometimes explained as the wind in glens, distant animal cries, or the sound of fast-moving water — natural sounds heard at night and culturally interpreted as a death portent.",
+        "proponents": ["Modern folklorists"],
+        "evidence_cited": ["Comparative studies of acoustic interpretations in death-portent traditions"]
+      }
+    ]
   },
+
   "cultural": {
     "folklore": {
-      "traditions": [],
-      "stories": [],
-      "beliefs": "See README.md for cultural context"
+      "traditions": [
+        "Highland clan death-portent traditions",
+        "Hebridean Gaelic supernatural tradition",
+        "Funeral keening (caoineadh) as cultural practice"
+      ],
+      "stories": [
+        "The Caoineag of Glencoe wails before the 1692 massacre",
+        "The Islay Caointeach in the green shawl"
+      ],
+      "beliefs": "In Highland Gaelic tradition, the Caoineag is understood as a real spirit-being whose lamentation warns of impending death. She is feared and respected rather than venerated."
+    },
+    "indigenous": {
+      "cultures": ["Scottish Gaels", "Hebridean Gaels"],
+      "significance": "The Caoineag is part of a living Gaelic supernatural inheritance closely linked to clan identity and to the cultural practice of keening (caoineadh) at funerals.",
+      "sensitivity_note": "Highland clan traditions surrounding the Caoineag are connected to specific historical traumas (notably the Glencoe Massacre); the figure should be discussed with respect for descendant communities.",
+      "respect_guidelines": "Use Gaelic spellings and acknowledge primary Gaelic sources where possible; avoid conflating the Caoineag with the Irish banshee, which is a distinct cognate tradition."
     },
     "popular_culture": {
-      "literature": [],
+      "literature": [
+        "Carmina Gadelica — Alexander Carmichael (1900)",
+        "Illustrated Gaelic-English Dictionary — Edward Dwelly (1911)"
+      ],
       "film_tv": [],
       "games": [],
-      "other": []
+      "music": [],
+      "other": [
+        "Mentioned in Highland walking-tour interpretation around Glencoe"
+      ]
     }
   },
+
   "research": {
-    "researchers": [],
-    "organizations": [],
-    "ongoing_studies": "None documented"
+    "researchers": [
+      { "name": "Alexander Carmichael", "affiliation": "Independent folklorist", "contribution": "Compiled the foundational late-19th-century record of Highland and Hebridean tradition (Carmina Gadelica)", "period": "1855-1912" },
+      { "name": "Edward Dwelly", "affiliation": "Lexicographer", "contribution": "Standard Gaelic dictionary including supernatural terms", "period": "1901-1911" }
+    ],
+    "organizations": [
+      { "name": "School of Scottish Studies, University of Edinburgh", "url": "https://www.ed.ac.uk/literatures-languages-cultures/celtic-scottish-studies", "focus": "Scholarly study of Scottish Gaelic oral tradition, including supernatural beings" }
+    ],
+    "ongoing_studies": "Academic study of the Caoineag is ongoing within Celtic Studies and Scottish folkloristics, generally as part of broader work on death-portent figures in Gaelic tradition."
   },
-  "sources": []
+
+  "sources": [
+    { "id": "carmichael-1900", "type": "book", "title": "Carmina Gadelica: Hymns and Incantations", "authors": ["Alexander Carmichael"], "publication": "T. and A. Constable, Edinburgh", "date": "1900" },
+    { "id": "dwelly-1911", "type": "book", "title": "The Illustrated Gaelic-English Dictionary", "authors": ["Edward Dwelly"], "publication": "Edward Dwelly, Herne Bay", "date": "1911" },
+    { "id": "wikipedia-caoineag", "type": "website", "title": "Caoineag", "publication": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Caoineag", "accessed": "2026-05-07" }
+  ]
 }
